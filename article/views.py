@@ -9,7 +9,7 @@ def login(request):
         username = request.POST.get('username', '')
         password = request.POST.get('password', '')
         if username == '' or password == '':
-            return JsonResponse({'status': 0, 'message': 'username or password null'})
+            return JsonResponse({'status': 0, 'message': 'username or password null1'})
         user = auth.authenticate(username=username, password=password)
         if user is not None:
             return JsonResponse({'status': 1, 'message': 'login success'})
