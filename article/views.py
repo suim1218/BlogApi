@@ -56,7 +56,7 @@ def add_article(request):
                     "author": author,
                     "content": content
                 }
-                return JsonResponse({'status': 1, 'data': data, 'message': 'add article success'})
+                return JsonResponse({'status': 1, 'data': data, 'message': 'add article successaaa'})
     else:
         return JsonResponse({'status': 0, 'message': 'request type error'})
 
