@@ -14,7 +14,7 @@ def login(request):
         if user is not None:
             return JsonResponse({'status': 1, 'message': 'login success'})
         else:
-            return JsonResponse({'status': 0, 'message': 'username or password error1'})
+            return JsonResponse({'status': 0, 'message': 'username or password error'})
     else:
         return JsonResponse({'status': 0, 'message': 'request type error'})
 
